@@ -1,0 +1,65 @@
+/* colors definition */
+
+/* pure color start */
+$color-white: #ffffff;
+
+$color-black: #000000;
+
+$color-red: #d14238;
+
+$color-radical-red: #FF3E67;
+
+$color-green: #64c778;
+
+$color-yellow: #efcf33;
+
+$color-blue: #4299cb;
+/* pure color end */
+
+/* mixed color start */
+$color-ghost-white: #fafbfc;
+
+$color-white-smoke: #f7f7f7;
+
+$color-blue-moon: #eeeeff;
+
+$color-solitude: #E9EFF5;
+
+$color-platinum: #e4e4e4;
+
+$color-lilac: #e6e9eb;
+
+$color-lily-white: #eaeaea;
+
+$color-iron: #cacaca;
+
+$color-ghost: #c3c4c7;
+
+$color-shady-lady: #9E9E9F;
+
+$color-bombay: #a0a0a0;
+
+$color-storm-grey: #737a87;
+
+$color-big-stone: #363d48;
+
+$color-oil: #333333;
+
+$color-viking: #41bdc5;
+
+$color-bond-blue: #198d98;
+
+$color-shamrock-green: #009757;
+
+$color-red-orange: #FB544B;
+/* mixed color end */
+
+/* alpha color generator start */
+@mixin color-with-alpha($color, $alpha) {
+    color: transparentize($color, 1-$alpha);
+}
+
+@mixin color-with-alpha-background($color, $alpha) {
+    background-color: transparentize($color, 1-$alpha);
+}
+/* alpha color generator end */

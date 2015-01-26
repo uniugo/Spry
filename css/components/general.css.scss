@@ -1,0 +1,158 @@
+/* import support */
+@import "general/colors";
+@import "general/fonts";
+@import "general/syntax-highlighting";
+@import "helper/ligature-symbols/style";
+
+/* end import support */
+
+$body-min-width: 768px;
+$body-max-width: 1400px;
+
+html {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+
+    body {
+        @extend html;
+        min-width: $body-min-width;
+        max-width: $body-max-width;
+
+        -webkit-box-shadow:0 0 20px $color-storm-grey;
+        -moz-box-shadow:0 0 20px $color-storm-grey;
+        box-shadow:0 0 20px $color-storm-grey;
+
+        /* header navigator */
+        header {
+            @mixin navigators($text-color, $background-color) {
+
+                margin: 0;
+                padding: 0;
+                height: 60px;
+                min-width: $body-min-width;
+                max-width: $body-max-width;
+                width: 100%;
+                position: absolute;
+                background-color: $background-color;
+
+                .left {
+                    margin: 0;
+                    padding: 0;
+                    float: left;
+
+                    .site {
+                        @extend .font-size-large-extreme;
+                        color: $text-color;
+                        margin: 15px 0 0 20px;
+                        padding: 0;
+                        display: inline-block;
+                    }
+                }
+
+                .right {
+                    margin: 0 10px 0 0;
+                    padding: 0;
+                    float: right;
+
+                    .link {
+                        @extend .font-size-normal-large;
+                        color: $text-color;
+                        margin: 20px 20px 0 20px;
+                        padding: 0;
+                        display: inline-block;
+
+                        -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                        -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                        -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                        -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                    }
+
+                    a :hover {
+                        color: $color-bombay;
+
+                        -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                        -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                        -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                        -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+                    }
+                }
+
+            }
+
+            #navigator {
+                @include navigators($color-big-stone, $color-lilac);
+                @include color-with-alpha-background($color-lilac, 0.8);
+            }
+
+            #navigator-transparent {
+                @include navigators($color-white, transparent);
+            }
+        }
+        /* end header navigator */
+
+        /* footer info */
+        footer {
+            color: $color-storm-grey ;
+            background-color: $color-big-stone;
+
+            #info {
+                @extend .font-size-small, .font-thin;
+                text-align: center;
+                padding: 20px 0 20px 0;
+            }
+
+            #info p {
+                @extend .font-size-small, .font-thin;
+                margin: 0;
+                padding: 10px 0 10px 0;
+                a {
+                    color: $color-storm-grey ;
+                }
+            }
+        }
+        /* end footer info */
+    }
+
+    /* dimension */
+    .fill {
+        width: 100%;
+        height: 100%;
+    }
+
+    .space {
+        height: 20px;
+        width: 20px;
+    }
+
+    /* end dimension */
+
+    /* special styles */
+    .line {
+        height: 4px;
+        background-color: $color-black;
+        margin: 20px 0 20px 0;
+        padding: 0;
+    }
+
+    .time-box {
+        margin: 0 5px 20px 0;
+        height: 22px;
+        width: 90px;
+        padding: 0 14px 0 14px;
+        border: $color-white-smoke solid 3px;
+        border-radius: 14px;
+        line-height: 23px;
+        text-align: center;
+    }
+
+    .time-box p {
+        margin: 0;
+        padding: 0;
+        color: $color-storm-grey;
+        @extend .font-size-small;
+    }
+    /* end special styles */
+}

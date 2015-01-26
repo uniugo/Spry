@@ -1,7 +1,7 @@
-sass --load-path css/* > build/plaincss.css
-sass --load-path css/* --style compressed > build/plaincss.min.css
+sass --load-path css/* > build/sprycss.css
+sass --load-path css/* --style compressed > build/sprycss.min.css
 
-cat js/* > build/plaincss.js
+cat js/* > build/sprycss.js
 
 rm -rf build/font
 cp -r font build/font

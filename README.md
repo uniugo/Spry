@@ -1,6 +1,6 @@
-sprycss
-=======
-Things should be what they should be look like.
+Spry - A Elegant CSS Framework
+==============================
+Things will be what they should be look like.
 
 License
 -------

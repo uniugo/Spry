@@ -8,6 +8,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.0.4)
+    execjs (2.3.0)
     ffi (1.9.6)
     formatador (0.2.5)
     guard (2.11.1)
@@ -27,8 +28,15 @@ GEM
     guard-process (1.2.1)
       guard-compat (~> 1.2, >= 1.2.1)
       spoon (~> 0.0.1)
+    guard-sass (1.6.0)
+      guard (>= 2.8.0)
+      sass (>= 3.1)
+    guard-uglify (1.0.0)
+      guard (>= 0.2.2)
+      uglifier
     hitimes (1.2.2)
     http_parser.rb (0.6.0)
+    json (1.8.2)
     listen (2.8.5)
       celluloid (>= 0.15.2)
       rb-fsevent (>= 0.9.3)
@@ -47,7 +55,7 @@ GEM
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    sass (3.4.10)
+    sass (3.4.11)
     shellany (0.0.1)
     slop (3.6.0)
     spoon (0.0.4)
@@ -55,6 +63,9 @@ GEM
     thor (0.19.1)
     timers (4.0.1)
       hitimes
+    uglifier (2.7.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
 
 PLATFORMS
   ruby
@@ -62,4 +73,5 @@ PLATFORMS
 DEPENDENCIES
   guard-livereload (~> 2.4.0)
   guard-process (~> 1.2.1)
-  sass (~> 3.4.10)
+  guard-sass (~> 1.6.0)
+  guard-uglify (~> 1.0.0)

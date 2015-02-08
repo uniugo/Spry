@@ -1,5 +1,5 @@
-Spry - A Elegant CSS Framework
-==============================
+Spry - A Elegant Web Front End Framework
+========================================
 Things will be what they should be look like.
 
 License

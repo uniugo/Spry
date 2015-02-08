@@ -1,7 +1,6 @@
-/* colors definition */
+/* colors definition of spry design */
 
-/* pure color start */
-$color-white: #ffffff;
+$color-spry-white: #ffffff;
 
 $color-black: #000000;
 
@@ -14,9 +13,7 @@ $color-green: #64c778;
 $color-yellow: #efcf33;
 
 $color-blue: #4299cb;
-/* pure color end */
 
-/* mixed color start */
 $color-ghost-white: #fafbfc;
 
 $color-white-smoke: #f7f7f7;
@@ -52,14 +49,24 @@ $color-bond-blue: #198d98;
 $color-shamrock-green: #009757;
 
 $color-red-orange: #FB544B;
-/* mixed color end */
 
-/* alpha color generator start */
-@mixin color-with-alpha($color, $alpha) {
-    color: transparentize($color, 1-$alpha);
-}
-
-@mixin color-with-alpha-background($color, $alpha) {
-    background-color: transparentize($color, 1-$alpha);
-}
-/* alpha color generator end */
+// Generate Colors
+//@each $color_name, $color in $colors-material {
+//    @each $color_type, $color_value in $color {
+//        @if $color_type == "base" {
+//            .#{$color_name} {
+//                color: $color_value !important;
+//            }
+//            .#{$color_name}-back {
+//                background-color: $color_value !important;
+//            }
+//        } @else {
+//            .#{$color_name}.#{$color_type} {
+//                color: $color_value !important;
+//            }
+//            .#{$color_name}-back.#{$color_type}-back {
+//                background-color: $color_value !important;
+//            }
+//        }
+//    }
+//}

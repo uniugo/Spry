@@ -1,0 +1,10 @@
+/* color functions */
+
+// alpha color generator for scss
+@mixin color-with-alpha($color, $alpha) {
+    color: transparentize($color, 1-$alpha);
+}
+
+@mixin color-with-alpha-background($color, $alpha) {
+    background-color: transparentize($color, 1-$alpha);
+}

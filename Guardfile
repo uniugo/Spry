@@ -5,8 +5,9 @@ guard 'process', :name => 'Compile', :command => 'bash Compile' do
     watch %r{^css/components/(.+\.s[ac]ss)$}
 end
 
-guard "uglify", :input => "build/sprycss.js", :output => "build/sprycss.min.js"
+guard "uglify", :input => "build/spry.js", :output => "build/spry.min.js"
 
 guard 'livereload' do
     watch %r{web/.+\.(css|js|html)}
+    watch %r{build/.+\.(css|js)}
 end

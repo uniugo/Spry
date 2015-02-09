@@ -1,72 +1,42 @@
 /* colors definition of spry design */
 
-$color-spry-white: #ffffff;
+$color-spry-design: (
 
-$color-black: #000000;
+    // kind of pure
+    "white": #ffffff,
+    "black": #000000,
+    "red": #ff3e67,
+    "green": #64c778,
+    "yellow": #ffdc36,
+    "blue": #4299cb,
 
-$color-red: #d14238;
-
-$color-radical-red: #FF3E67;
-
-$color-green: #64c778;
-
-$color-yellow: #efcf33;
-
-$color-blue: #4299cb;
-
-$color-ghost-white: #fafbfc;
-
-$color-white-smoke: #f7f7f7;
-
-$color-blue-moon: #eeeeff;
-
-$color-solitude: #E9EFF5;
-
-$color-platinum: #e4e4e4;
-
-$color-lilac: #e6e9eb;
-
-$color-lily-white: #eaeaea;
-
-$color-iron: #cacaca;
-
-$color-ghost: #c3c4c7;
-
-$color-shady-lady: #9E9E9F;
-
-$color-bombay: #a0a0a0;
-
-$color-storm-grey: #737a87;
-
-$color-big-stone: #363d48;
-
-$color-oil: #333333;
-
-$color-viking: #41bdc5;
-
-$color-bond-blue: #198d98;
-
-$color-shamrock-green: #009757;
-
-$color-red-orange: #FB544B;
+    // kind of mix
+    "ghost-white": #fafbfc,
+    "white-smoke": #f7f7f7,
+    "blue-moon": #eeeeff,
+    "solitude": #e9eff5,
+    "platinum": #e4e4e4,
+    "lilac": #e6e9eb,
+    "lily-white": #eaeaea,
+    "iron": #cacaca,
+    "ghost": #c3c4c7,
+    "shady-lady": #9e9e9f,
+    "bombay": #a0a0a0,
+    "storm-grey": #737a87,
+    "big-stone": #363d48,
+    "oil": #333333,
+    "viking": #41bdc5,
+    "bond-blue": #198d98,
+    "shamrock-green": #009757,
+    "red-orange": #fb544b
+);
 
 // Generate Colors
-//@each $color_name, $color in $colors-material {
-//    @each $color_type, $color_value in $color {
-//        @if $color_type == "base" {
-//            .#{$color_name} {
-//                color: $color_value !important;
-//            }
-//            .#{$color_name}-back {
-//                background-color: $color_value !important;
-//            }
-//        } @else {
-//            .#{$color_name}.#{$color_type} {
-//                color: $color_value !important;
-//            }
-//            .#{$color_name}-back.#{$color_type}-back {
-//                background-color: $color_value !important;
-//            }
-//        }
-//    }
-//}
+@each $color_name, $color_value in $color-spry-design {
+    .color-spry-#{$color_name} {
+        color: $color_value !important;
+    }
+    .color-spry-#{$color_name}-back {
+        background-color: $color_value !important;
+    }
+}

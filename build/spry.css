@@ -1,88 +1,233 @@
+/* color functions */
 /* colors definition of spry design */
+.color-spry-white {
+  color: #ffffff !important; }
+
+.color-spry-white-back {
+  background-color: #ffffff !important; }
+
+.color-spry-black {
+  color: #000000 !important; }
+
+.color-spry-black-back {
+  background-color: #000000 !important; }
+
+.color-spry-red {
+  color: #ff3e67 !important; }
+
+.color-spry-red-back {
+  background-color: #ff3e67 !important; }
+
+.color-spry-green {
+  color: #64c778 !important; }
+
+.color-spry-green-back {
+  background-color: #64c778 !important; }
+
+.color-spry-yellow {
+  color: #ffdc36 !important; }
+
+.color-spry-yellow-back {
+  background-color: #ffdc36 !important; }
+
+.color-spry-blue {
+  color: #4299cb !important; }
+
+.color-spry-blue-back {
+  background-color: #4299cb !important; }
+
+.color-spry-ghost-white {
+  color: #fafbfc !important; }
+
+.color-spry-ghost-white-back {
+  background-color: #fafbfc !important; }
+
+.color-spry-white-smoke {
+  color: #f7f7f7 !important; }
+
+.color-spry-white-smoke-back {
+  background-color: #f7f7f7 !important; }
+
+.color-spry-blue-moon {
+  color: #eeeeff !important; }
+
+.color-spry-blue-moon-back {
+  background-color: #eeeeff !important; }
+
+.color-spry-solitude {
+  color: #e9eff5 !important; }
+
+.color-spry-solitude-back {
+  background-color: #e9eff5 !important; }
+
+.color-spry-platinum {
+  color: #e4e4e4 !important; }
+
+.color-spry-platinum-back {
+  background-color: #e4e4e4 !important; }
+
+.color-spry-lilac {
+  color: #e6e9eb !important; }
+
+.color-spry-lilac-back {
+  background-color: #e6e9eb !important; }
+
+.color-spry-lily-white {
+  color: #eaeaea !important; }
+
+.color-spry-lily-white-back {
+  background-color: #eaeaea !important; }
+
+.color-spry-iron {
+  color: #cacaca !important; }
+
+.color-spry-iron-back {
+  background-color: #cacaca !important; }
+
+.color-spry-ghost {
+  color: #c3c4c7 !important; }
+
+.color-spry-ghost-back {
+  background-color: #c3c4c7 !important; }
+
+.color-spry-shady-lady {
+  color: #9e9e9f !important; }
+
+.color-spry-shady-lady-back {
+  background-color: #9e9e9f !important; }
+
+.color-spry-bombay {
+  color: #a0a0a0 !important; }
+
+.color-spry-bombay-back {
+  background-color: #a0a0a0 !important; }
+
+.color-spry-storm-grey {
+  color: #737a87 !important; }
+
+.color-spry-storm-grey-back {
+  background-color: #737a87 !important; }
+
+.color-spry-big-stone {
+  color: #363d48 !important; }
+
+.color-spry-big-stone-back {
+  background-color: #363d48 !important; }
+
+.color-spry-oil {
+  color: #333333 !important; }
+
+.color-spry-oil-back {
+  background-color: #333333 !important; }
+
+.color-spry-viking {
+  color: #41bdc5 !important; }
+
+.color-spry-viking-back {
+  background-color: #41bdc5 !important; }
+
+.color-spry-bond-blue {
+  color: #198d98 !important; }
+
+.color-spry-bond-blue-back {
+  background-color: #198d98 !important; }
+
+.color-spry-shamrock-green {
+  color: #009757 !important; }
+
+.color-spry-shamrock-green-back {
+  background-color: #009757 !important; }
+
+.color-spry-red-orange {
+  color: #fb544b !important; }
+
+.color-spry-red-orange-back {
+  background-color: #fb544b !important; }
+
 /* colors definition of material design */
 .color-material-red.lighten-5 {
-  color: #FFEBEE !important; }
+  color: #ffebee !important; }
 
 .color-material-red-back.lighten-5-back {
-  background-color: #FFEBEE !important; }
+  background-color: #ffebee !important; }
 
 .color-material-red.lighten-4 {
-  color: #FFCDD2 !important; }
+  color: #ffcdd2 !important; }
 
 .color-material-red-back.lighten-4-back {
-  background-color: #FFCDD2 !important; }
+  background-color: #ffcdd2 !important; }
 
 .color-material-red.lighten-3 {
-  color: #EF9A9A !important; }
+  color: #ef9a9a !important; }
 
 .color-material-red-back.lighten-3-back {
-  background-color: #EF9A9A !important; }
+  background-color: #ef9a9a !important; }
 
 .color-material-red.lighten-2 {
-  color: #E57373 !important; }
+  color: #e57373 !important; }
 
 .color-material-red-back.lighten-2-back {
-  background-color: #E57373 !important; }
+  background-color: #e57373 !important; }
 
 .color-material-red.lighten-1 {
-  color: #EF5350 !important; }
+  color: #ef5350 !important; }
 
 .color-material-red-back.lighten-1-back {
-  background-color: #EF5350 !important; }
+  background-color: #ef5350 !important; }
 
 .color-material-red {
-  color: #F44336 !important; }
+  color: #f44336 !important; }
 
 .color-material-red-back {
-  background-color: #F44336 !important; }
+  background-color: #f44336 !important; }
 
 .color-material-red.darken-1 {
-  color: #E53935 !important; }
+  color: #e53935 !important; }
 
 .color-material-red-back.darken-1-back {
-  background-color: #E53935 !important; }
+  background-color: #e53935 !important; }
 
 .color-material-red.darken-2 {
-  color: #D32F2F !important; }
+  color: #d32f2f !important; }
 
 .color-material-red-back.darken-2-back {
-  background-color: #D32F2F !important; }
+  background-color: #d32f2f !important; }
 
 .color-material-red.darken-3 {
-  color: #C62828 !important; }
+  color: #c62828 !important; }
 
 .color-material-red-back.darken-3-back {
-  background-color: #C62828 !important; }
+  background-color: #c62828 !important; }
 
 .color-material-red.darken-4 {
-  color: #B71C1C !important; }
+  color: #b71c1c !important; }
 
 .color-material-red-back.darken-4-back {
-  background-color: #B71C1C !important; }
+  background-color: #b71c1c !important; }
 
 .color-material-red.accent-1 {
-  color: #FF8A80 !important; }
+  color: #ff8a80 !important; }
 
 .color-material-red-back.accent-1-back {
-  background-color: #FF8A80 !important; }
+  background-color: #ff8a80 !important; }
 
 .color-material-red.accent-2 {
-  color: #FF5252 !important; }
+  color: #ff5252 !important; }
 
 .color-material-red-back.accent-2-back {
-  background-color: #FF5252 !important; }
+  background-color: #ff5252 !important; }
 
 .color-material-red.accent-3 {
-  color: #FF1744 !important; }
+  color: #ff1744 !important; }
 
 .color-material-red-back.accent-3-back {
-  background-color: #FF1744 !important; }
+  background-color: #ff1744 !important; }
 
 .color-material-red.accent-4 {
-  color: #D50000 !important; }
+  color: #d50000 !important; }
 
 .color-material-red-back.accent-4-back {
-  background-color: #D50000 !important; }
+  background-color: #d50000 !important; }
 
 .color-material-pink.lighten-5 {
   color: #fce4ec !important; }

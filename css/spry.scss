@@ -1,12 +1,10 @@
 @charset "UTF-8";
 
-// Mixins
-
-
-// Variables;
+// Colors
 @import "components/colors";
 @import "components/colors-spry-design";
 @import "components/colors-material-design";
 
-// components
-
+// Fonts
+@import "components/fonts";
+@import "components/fonts-font-face";

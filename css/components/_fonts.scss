@@ -1,11 +1,4 @@
-/* handle all styles related to text */
-
-/* font support */
-@import "general/fonts/fonts-prettyx-code";
-@import "general/fonts/fonts-prettyx-text-english";
-/* end font support */
-
-/* predefined styles for font display */
+// Font Weight
 .font-thin-extreme {
     font-weight: 100;
 }
@@ -14,15 +7,15 @@
     font-weight: 200;
 }
 
-.font-normal-thin {
+.font-regular-light {
     font-weight: 300;
 }
 
-.font-normal {
+.font-regular {
     font-weight: 400;
 }
 
-.font-normal-bold {
+.font-regular-heavy {
     font-weight: 500;
 }
 
@@ -33,185 +26,3 @@
 .font-bold-extreme {
     font-weight: 700;
 }
-
-.font-size-tiny {
-    font-size: 0.5em;
-}
-
-.font-size-small-extreme {
-    font-size: 0.7em;
-}
-
-.font-size-small {
-    font-size: 1em;
-}
-
-.font-size-normal {
-    font-size: 1.2em;
-}
-
-.font-size-normal-large {
-    font-size: 1.3em;
-}
-
-.font-size-large {
-    font-size: 1.5em;
-}
-
-.font-size-large-extreme {
-    font-size: 2em;
-}
-
-.font-size-huge {
-    font-size: 3em;
-}
-/* end predefined styles for font display */
-
-/* selection */
-::-moz-selection {
-    background: #00ccc0;
-    color: #fff;
-    text-shadow: none;
-}
-::selection {
-    background: #00ccc0;
-    color: #fff;
-    text-shadow: none;
-}
-/* end selection */
-
-/* label and classes */
-* {
-    /*
-     * English Font Priority: 'PrettyX Text English', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Arial', 'Verdana', 'Sans-Serif'
-     * Code Font Priority: 'Monaco', 'PrettyX Code'
-     * Chinese Font Priority: 'Hiragino Sans GB', 'Heiti SC', 'Heiti TC', 'STHeiti', 'STXihei'
-     */
-    font-family: 'PrettyX Text English', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Hiragino Sans GB', 'Heiti SC', 'Heiti TC', 'STHeiti', 'STXihei', 'Arial', 'Verdana', 'Sans-Serif', serif;
-    font-weight: 200; /* font-thin */
-    text-decoration: none;
-    line-height: 1em;
-    -moz-tab-size: 4;
-    -o-tab-size:   4;
-    tab-size:      4;
-}
-
-h1 {
-    margin: 1em 0 1em 0;
-    padding: 0;
-    font-weight: normal;
-    font-size: 2.5em;
-}
-
-h2 {
-    margin: 1em 0 1em 0;
-    padding: 0;
-    font-weight: normal;
-    font-size: 2em;
-}
-
-h3 {
-    margin: 1em 0 1em 0;
-    padding: 0;
-    font-weight: normal;
-    font-size: 1.6em;
-}
-
-h4 {
-    margin: 1em 0 1em 0;
-    padding: 0;
-    font-weight: normal;
-    font-size: 1.2em;
-}
-
-h5 {
-    margin: 1em 0 1em 0;
-    padding: 0;
-    font-weight: normal;
-    font-size: 1em;
-}
-
-h6 {
-    margin: 1em 0 1em 0;
-    padding: 0;
-    font-weight: normal;
-    font-size: 0.8em;
-}
-
-p {
-    font-weight: 400; /* font-normal */
-    font-size: 1.2em; /* font-size-normal */
-    word-spacing: 0.2em;
-    line-height: 1.5em;
-}
-
-ol, ul, li {
-    font-weight: 400; /* font-normal */
-    font-size: 1.1em;
-    word-spacing: 0.2em;
-    line-height: 1.5em;
-}
-
-a {
-    word-wrap: break-word;
-    color: #0093c2;
-}
-
-strong {
-    font-weight: 600; /* font-bold */
-}
-/* end label and classes */
-
-/* code style */
-code {
-    font-family: 'Monaco', 'PrettyX Code', 'PrettyX Text English', 'Hiragino Sans GB', 'Heiti SC', 'Heiti TC', 'STHeiti', 'STXihei', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Arial', 'Verdana', 'Sans-Serif', serif;
-    font-size: 0.8em;
-    line-height: 1.05em;
-    word-spacing: 0;
-    border: 0.1em solid $color-iron;
-    background-color: $color-ghost-white;
-    padding: 0.1em;
-    overflow: hidden;
-}
-
-.code {
-    border: 0.1em solid $color-iron;
-    background-color: $color-ghost-white;
-
-    pre {
-        margin: 1em;
-        overflow: hidden;
-
-        code {
-            border: 0;
-            background-color: transparent;
-            font-size: 0.9em;
-
-            span {
-                font-family: 'Monaco', 'PrettyX Code', 'PrettyX Text English', 'Hiragino Sans GB', 'Heiti SC', 'Heiti TC', 'STHeiti', 'STXihei', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Arial', 'Verdana', 'Sans-Serif', serif;
-                font-size: 0.9em;
-                line-height: 1.5em;
-                word-spacing: 0;
-            }
-        }
-    }
-}
-/* end code style */
-
-/* block quote */
-blockquote {
-    border-left-color: $color-platinum;
-    border-left-style: solid;
-    border-left-width: 4px;
-    color: #777777;
-    display: block;
-    font-size: 15px;
-    font-style: normal;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 25px;
-    margin: 15px 0px 0px 0px;
-    padding: 0px 15px 0px 15px;
-    word-wrap: break-word;
-}
-/* block quote end */

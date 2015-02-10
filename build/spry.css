@@ -1680,3 +1680,24 @@
 
 .color-material-shades-back.white-back {
   background-color: #FFFFFF !important; }
+
+.font-thin-extreme {
+  font-weight: 100; }
+
+.font-thin {
+  font-weight: 200; }
+
+.font-regular-light {
+  font-weight: 300; }
+
+.font-regular {
+  font-weight: 400; }
+
+.font-regular-heavy {
+  font-weight: 500; }
+
+.font-bold {
+  font-weight: 600; }
+
+.font-bold-extreme {
+  font-weight: 700; }

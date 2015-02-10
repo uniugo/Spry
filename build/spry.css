@@ -1703,6 +1703,24 @@
   font-weight: 700; }
 
 @font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("font/source-serif-pro/WOFF/OTF/SourceSerifPro-Light.otf.woff") format("woff"); }
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("font/source-serif-pro/WOFF/OTF/SourceSerifPro-Regular.otf.woff") format("woff"); }
+@font-face {
+  font-family: 'Source Serif Pro';
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("font/source-serif-pro/WOFF/OTF/SourceSerifPro-Bold.otf.woff") format("woff"); }
+@font-face {
   font-family: 'Source Code Pro';
   font-weight: 200;
   font-style: normal;

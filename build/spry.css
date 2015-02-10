@@ -1701,3 +1701,22 @@
 
 .font-bold-extreme {
   font-weight: 700; }
+
+@font-face {
+  font-family: 'Source Code Pro';
+  font-weight: 200;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("font/source-code-pro/WOFF/OTF/SourceCodePro-Light.otf.woff") format("woff"); }
+@font-face {
+  font-family: 'Source Code Pro';
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("font/source-code-pro/WOFF/OTF/SourceCodePro-Regular.otf.woff") format("woff"); }
+@font-face {
+  font-family: 'Source Code Pro';
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  src: url("font/source-code-pro/WOFF/OTF/SourceCodePro-Bold.otf.woff") format("woff"); }

@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 // Colors
-@import "components/colors";
-@import "components/colors-spry-design";
-@import "components/colors-material-design";
+@import "components/color";
+@import "components/color-spry-design";
+@import "components/color-material-design";
 
 // Fonts
-@import "components/fonts";
-@import "components/fonts-font-face";
+@import "components/font";
+@import "components/font-font-face";
+@import "components/font-syntax-highlighting";

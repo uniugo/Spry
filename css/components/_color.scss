@@ -1,6 +1,6 @@
-/* color functions */
+/* other helpers for color management */
 
-// alpha color generator for scss
+// scss color functions - alpha color generator
 @mixin color-with-alpha($color, $alpha) {
     color: transparentize($color, 1-$alpha);
 }

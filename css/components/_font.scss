@@ -1,0 +1,35 @@
+/*
+ * global typeface management
+ *
+ * font family, font weight, font size, font priority,
+ * line height, block size, styling, alignment and etc.
+ */
+
+// font weight
+$font_weight: (
+    "thin-extreme":  100,
+    "thin":          200,
+    "regular-light": 300,
+    "regular":       400,
+    "regular-heavy": 500,
+    "bold":          600,
+    "bold-extreme":  700
+);
+
+@each $font_weight_name, $font_weight_value in $font_weight {
+    .font-#{$font_weight_name} {
+        font-weight: $font_weight_value !important;
+    }
+}
+
+// selection
+::-moz-selection {
+    background: #00ccc0;
+    color: #fff;
+    text-shadow: none;
+}
+::selection {
+    background: #00ccc0;
+    color: #fff;
+    text-shadow: none;
+}

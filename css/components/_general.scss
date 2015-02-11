@@ -1,150 +1,203 @@
-$body-min-width: 768px;
-$body-max-width: 1400px;
+/* global styles */
+
+* {
+    font-family: $font_priority_ui;
+    font-weight: map_get($font_weight, "regular");
+    text-decoration: none;
+    line-height: 1rem;
+    word-spacing: 0.2rem;
+    -moz-tab-size: 4;
+    -o-tab-size:   4;
+    tab-size:      4;
+}
 
 html {
+    // Prevent iOS text size adjust after orientation change, without disabling
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body {
     margin: 0 auto;
     padding: 0;
     width: 100%;
+}
 
-    body {
-        @extend html;
-        min-width: $body-min-width;
-        max-width: $body-max-width;
+h1 {
+    font-weight: normal;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    padding: 0;
+}
 
-        -webkit-box-shadow:0 0 20px $color-storm-grey;
-        -moz-box-shadow:0 0 20px $color-storm-grey;
-        box-shadow:0 0 20px $color-storm-grey;
+h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin: 1rem 0;
+    padding: 0;
+}
 
-        /* header navigator */
-        header {
-            @mixin navigators($text-color, $background-color) {
+h3 {
+    font-weight: normal;
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    padding: 0;
+}
 
-                margin: 0;
-                padding: 0;
-                height: 60px;
-                min-width: $body-min-width;
-                max-width: $body-max-width;
-                width: 100%;
-                position: absolute;
-                background-color: $background-color;
+h4 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    padding: 0;
+}
 
-                .left {
-                    margin: 0;
-                    padding: 0;
-                    float: left;
+h5 {
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 1rem 0;
+    padding: 0;
+}
 
-                    .site {
-                        @extend .font-size-large-extreme;
-                        color: $text-color;
-                        margin: 15px 0 0 20px;
-                        padding: 0;
-                        display: inline-block;
-                    }
-                }
+h6 {
+    font-weight: normal;
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    padding: 0;
+}
 
-                .right {
-                    margin: 0 10px 0 0;
-                    padding: 0;
-                    float: right;
+p {
+    font-weight: normal;
+    font-size: 1.2rem;
+    word-spacing: 0.2rem;
+    line-height: 1.5rem;
+}
 
-                    .link {
-                        @extend .font-size-normal-large;
-                        color: $text-color;
-                        margin: 20px 20px 0 20px;
-                        padding: 0;
-                        display: inline-block;
+ol, ul, li {
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
 
-                        -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-                        -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-                        -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-                        -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-                        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-                    }
+a {
+    word-wrap: break-word;
+    color: map_get($colors-spry-design, "blue");
+    background-color: transparent;
+}
 
-                    a :hover {
-                        color: $color-bombay;
+a:active, a:hover {
+    outline: 0;
+}
 
-                        -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-                        -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-                        -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-                        -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-                        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-                    }
-                }
+b, strong {
+    font-weight: bold;
+}
 
-            }
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
 
-            #navigator {
-                @include navigators($color-big-stone, $color-lilac);
-                @include color-with-alpha-background($color-lilac, 0.8);
-            }
+pre {
+    overflow: auto;
+}
 
-            #navigator-transparent {
-                @include navigators($color-white, transparent);
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5rem;
+}
+
+sub {
+    bottom: -0.25rem;
+}
+
+article, article * {
+    font-family: $font_priority_reading;
+    margin: 1rem 0;
+}
+
+blockquote {
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    padding: 0 1rem;
+    color: map_get($colors-spry-design, "storm-grey");
+    border-left: 0.3rem solid map_get($colors-spry-design, "platinum");
+}
+
+mark, code {
+    font-family: $font_priority_code;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    word-spacing: 0;
+    word-wrap: break-word;
+    padding: 0.1rem;
+    border: 0.1rem solid map_get($colors-spry-design, "iron");
+    background-color: map_get($colors-spry-design, "ghost-white");
+}
+
+.code {
+    border: 0.1rem solid map_get($colors-spry-design, "iron");
+    background-color: map_get($colors-spry-design, "ghost-white");
+
+    pre {
+        margin: 1rem;
+
+        code {
+            font-size: 0.9rem;
+            word-wrap: normal;
+            border: 0;
+            background-color: transparent;
+
+            span {
+                font-family: $font_priority_code;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                word-spacing: 0;
             }
         }
-        /* end header navigator */
+    }
+}
 
-        /* footer info */
-        footer {
-            color: $color-storm-grey ;
-            background-color: $color-big-stone;
+.separator {
+    background-color: map_get($colors-spry-design, "black");
+    margin: 1.2em 0;
+    padding: 0;
 
-            #info {
-                @extend .font-size-small, .font-thin;
-                text-align: center;
-                padding: 20px 0 20px 0;
-            }
-
-            #info p {
-                @extend .font-size-small, .font-thin;
-                margin: 0;
-                padding: 10px 0 10px 0;
-                a {
-                    color: $color-storm-grey ;
-                }
-            }
-        }
-        /* end footer info */
+    &.size-1 {
+        height: 0.05em;
     }
 
-    /* dimension */
-    .fill {
-        width: 100%;
-        height: 100%;
+    &.size-2 {
+        height: 0.1em;
     }
 
-    .space {
-        height: 20px;
-        width: 20px;
+    &.size-3 {
+        height: 0.2em;
     }
 
-    /* end dimension */
-
-    /* special styles */
-    .line {
-        height: 4px;
-        background-color: $color-black;
-        margin: 20px 0 20px 0;
-        padding: 0;
+    &.size-4 {
+        height: 0.3em;
     }
+}
 
-    .time-box {
-        margin: 0 5px 20px 0;
-        height: 22px;
-        width: 90px;
-        padding: 0 14px 0 14px;
-        border: $color-white-smoke solid 3px;
-        border-radius: 14px;
-        line-height: 23px;
-        text-align: center;
-    }
+// selection
+::-moz-selection {
+    background: map_get($colors-spry-design, "cyan");
+    color: #fff;
+    text-shadow: none;
+}
 
-    .time-box p {
-        margin: 0;
-        padding: 0;
-        color: $color-storm-grey;
-        @extend .font-size-small;
-    }
-    /* end special styles */
+::selection {
+    background: map_get($colors-spry-design, "cyan");
+    color: #fff;
+    text-shadow: none;
 }

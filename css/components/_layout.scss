@@ -1,0 +1,135 @@
+/* layout controls */
+
+// media query ranges
+$screen-point-small: 600px !default;
+$screen-point-medium: 960px !default;
+$screen-point-large: 1200px !default;
+
+$screen-medium-and-up: "only screen and (min-width : #{$screen-point-medium})" !default;
+$screen-medium-and-down: "only screen and (max-width : #{$screen-point-large})" !default;
+$screen-large-and-up: "only screen and (min-width : #{$screen-point-large})" !default;
+$small-and-down: "only screen and (max-width : #{$screen-point-small})" !default;
+$medium-only: "only screen and (min-width : #{$screen-point-small}) and (max-width : #{$screen-point-medium})" !default;
+
+// space
+$column_number: 12;
+$spacing_value: 1.5em;
+
+.container {
+    padding: 0 $spacing_value;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+@media #{$screen-medium-and-up} {
+    .container {
+        width: 85%;
+    }
+}
+@media #{$screen-large-and-up} {
+    .container {
+        width: 80%;
+    }
+}
+
+.section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    &.no-pad {
+        padding: 0;
+    }
+    &.no-pad-bot {
+        padding-bottom: 0;
+    }
+    &.no-pad-top {
+        padding-top: 0;
+    }
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    // Clear floating children
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .col {
+        @include transition(all .3s);
+        @include box-sizing(border-box);
+        float: left;
+        padding: 0 $spacing_value / 2;
+
+        $index: 1;
+        @while $index <= $column_number {
+            $percentageentage: unquote((100 / ($column_number / $index)) + "%");
+            &.s#{$index} {
+                width: $percentageentage;
+                margin-left: 0;
+            }
+            $index: $index + 1;
+        }
+
+        $index: 1;
+        @while $index <= $column_number {
+            $percentageentage: unquote((100 / ($column_number / $index)) + "%");
+            &.offset-s#{$index} {
+                margin-left: $percentageentage;
+            }
+            $index: $index + 1;
+        }
+
+        @media #{$screen-medium-and-up} {
+
+            $index: 1;
+            @while $index <= $column_number {
+                $percentageentage: unquote((100 / ($column_number / $index)) + "%");
+                &.m#{$index} {
+                    width: $percentageentage;
+                    margin-left: 0;
+                }
+                $index: $index + 1;
+            }
+
+            $index: 1;
+            @while $index <= $column_number {
+                $percentage: unquote((100 / ($column_number / $index)) + "%");
+                &.offset-m#{$index} {
+                    margin-left: $percentage;
+                }
+                $index: $index + 1;
+            }
+
+        }
+
+        @media #{$screen-large-and-up} {
+
+            $index: 1;
+            @while $index <= $column_number {
+                $percentage: unquote((100 / ($column_number / $index)) + "%");
+                &.l#{$index} {
+                    width: $percentage;
+                    margin-left: 0;
+                }
+                $index: $index + 1;
+            }
+
+            $index: 1;
+            @while $index <= $column_number {
+                $percentage: unquote((100 / ($column_number / $index)) + "%");
+                &.offset-l#{$index} {
+                    margin-left: $percentage;
+                }
+                $index: $index + 1;
+            }
+
+        }
+
+    }
+}

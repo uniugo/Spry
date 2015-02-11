@@ -1,11 +1,20 @@
 @charset "UTF-8";
 
-// Colors
+// Supporting
+@import "components/warm-up";
+
+// Color
 @import "components/color";
 @import "components/color-spry-design";
 @import "components/color-material-design";
 
-// Fonts
+// Typeface
 @import "components/typeface";
 @import "components/typeface-font";
 @import "components/typeface-syntax-highlighting";
+
+// Layout
+@import "components/layout";
+
+// General
+@import "components/general";

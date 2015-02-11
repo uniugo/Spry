@@ -1,6 +1,6 @@
 /* colors definition of spry design */
 
-$color-spry-design: (
+$colors-spry-design: (
 
     // kind of pure
     "white": #ffffff,
@@ -9,6 +9,7 @@ $color-spry-design: (
     "green": #64c778,
     "yellow": #ffdc36,
     "blue": #4299cb,
+    "cyan": #00dad0,
 
     // kind of mix
     "ghost-white": #fafbfc,
@@ -32,7 +33,7 @@ $color-spry-design: (
 );
 
 // Generate Colors
-@each $color_name, $color_value in $color-spry-design {
+@each $color_name, $color_value in $colors-spry-design {
     .color-spry-#{$color_name} {
         color: $color_value !important;
     }

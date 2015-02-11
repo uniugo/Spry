@@ -36,6 +36,12 @@
 .color-spry-blue-back {
   background-color: #4299cb !important; }
 
+.color-spry-cyan {
+  color: #00dad0 !important; }
+
+.color-spry-cyan-back {
+  background-color: #00dad0 !important; }
+
 .color-spry-ghost-white {
   color: #fafbfc !important; }
 
@@ -1687,6 +1693,16 @@
  * font family, font weight, font size, font priority,
  * line height, block size, styling, alignment and etc.
  */
+/*
+ * UI font priority:
+ *     English: 'Source Sans Pro', 'Lucida Grande', 'Helvetica Neue', 'Arial'
+ *     Chinese: 'Hiragino Sans GB', 'Heiti SC', 'Heiti TC', 'STHeiti', 'STXihei', "Microsoft YaHei"
+ *     FallBack: 'Sans-Serif', serif
+ * code font priority:
+ *     English: 'Source Code Pro', 'Source Sans Pro', 'Lucida Grande', 'Helvetica Neue', 'Arial'
+ *     Chinese: 'Hiragino Sans GB', 'Heiti SC', 'Heiti TC', 'STHeiti', 'STXihei', "Microsoft YaHei"
+ *     FallBack: 'Sans-Serif', serif
+ */
 .font-thin-extreme {
   font-weight: 100 !important; }
 
@@ -1708,157 +1724,142 @@
 .font-bold-extreme {
   font-weight: 700 !important; }
 
-.font-size-tiny {
-  font-size: 0.5em; }
+.font-tiny {
+  font-size: 0.8em !important; }
 
-.font-size-small-extreme {
-  font-size: 0.7em; }
+.font-small {
+  font-size: 1em !important; }
 
-.font-size-small {
-  font-size: 1em; }
+.font-normal {
+  font-size: 1.2em !important; }
 
-.font-size-normal {
-  font-size: 1.2em; }
+.font-large {
+  font-size: 1.3em !important; }
 
-.font-size-normal-large {
-  font-size: 1.3em; }
+.font-large-extreme {
+  font-size: 1.5em !important; }
 
-.font-size-large {
-  font-size: 1.5em; }
+.font-huge {
+  font-size: 2em !important; }
 
-.font-size-large-extreme {
-  font-size: 2em; }
-
-.font-size-huge {
-  font-size: 3em; }
+.font-huge-extreme {
+  font-size: 3em !important; }
 
 ::-moz-selection {
-  background: #00ccc0;
+  background: #00dad0;
   color: #fff;
   text-shadow: none; }
 
 ::selection {
-  background: #00ccc0;
+  background: #00dad0;
   color: #fff;
   text-shadow: none; }
 
-/*
- * UI font priority:
- *     Mac OS X (English): 'Source Code Pro', 'Lucida Grande', 'Helvetica Neue'
- *     Mac OS X (Chinese): 'Hiragino Sans GB', 'Heiti SC', 'Heiti TC', 'STHeiti', 'STXihei'
- *     Windows (English): 'Arial'
- *     Windows (Chinese): "Microsoft YaHei"
- *     FallBack: 'Sans-Serif', serif
- *
- */
 * {
-  font-family: 'Source Code Pro', 'Lucida Grande', 'Helvetica Neue', 'Hiragino Sans GB', 'Heiti SC', 'Heiti TC', 'STHeiti', 'STXihei', 'Arial', "Microsoft YaHei", 'Sans-Serif', serif;
+  font-family: "Source Sans Pro", "Lucida Grande", "Helvetica Neue", "Hiragino Sans GB", "Heiti SC", "Heiti TC", "STHeiti", "STXihei", "Arial", "Microsoft YaHei";
   font-weight: 400;
   text-decoration: none;
   line-height: 1em;
+  word-spacing: 0.2em;
   -moz-tab-size: 4;
   -o-tab-size: 4;
-  tab-size: 4; }
+  tab-size: 4;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+article, article * {
+  font-family: "Lucida Grande", "Helvetica Neue", "Source Sans Pro", "Hiragino Sans GB", "Heiti SC", "Heiti TC", "STHeiti", "STXihei", "Arial", "Microsoft YaHei";
+  margin: 1em 0 1em 0; }
+
+blockquote {
+  font-weight: normal;
+  font-size: 1.2em;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1.5em;
+  word-wrap: break-word;
+  margin: 15px 0 0 0;
+  padding: 0 15px 0 15px;
+  color: #737a87;
+  border-left: 4px solid #e4e4e4; }
+
+code {
+  font-family: "Source Code Pro", "Lucida Grande", "Helvetica Neue", "Hiragino Sans GB", "Heiti SC", "Heiti TC", "STHeiti", "STXihei", "Arial", "Microsoft YaHei";
+  font-size: 1em;
+  line-height: 1.2em;
+  word-spacing: 0;
+  border: 0.1em solid #cacaca;
+  background-color: #fafbfc;
+  padding: 0.1em;
+  overflow: hidden; }
+
+.code {
+  border: 0.1em solid #cacaca;
+  background-color: #fafbfc; }
+  .code pre {
+    margin: 1em;
+    overflow: hidden; }
+    .code pre code {
+      border: 0;
+      background-color: transparent;
+      font-size: 0.9em; }
+      .code pre code span {
+        font-family: "Source Code Pro", "Lucida Grande", "Helvetica Neue", "Hiragino Sans GB", "Heiti SC", "Heiti TC", "STHeiti", "STXihei", "Arial", "Microsoft YaHei";
+        font-size: 1em;
+        line-height: 1.5em;
+        word-spacing: 0; }
 
 h1 {
-  margin: 1em 0 1em 0;
-  padding: 0;
   font-weight: normal;
-  font-size: 2.5em; }
+  font-size: 2.5em;
+  margin: 1em 0 1em 0;
+  padding: 0; }
 
 h2 {
-  margin: 1em 0 1em 0;
-  padding: 0;
   font-weight: normal;
-  font-size: 2em; }
+  font-size: 2em;
+  margin: 1em 0 1em 0;
+  padding: 0; }
 
 h3 {
-  margin: 1em 0 1em 0;
-  padding: 0;
   font-weight: normal;
-  font-size: 1.6em; }
+  font-size: 1.6em;
+  margin: 1em 0 1em 0;
+  padding: 0; }
 
 h4 {
-  margin: 1em 0 1em 0;
-  padding: 0;
   font-weight: normal;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  margin: 1em 0 1em 0;
+  padding: 0; }
 
 h5 {
-  margin: 1em 0 1em 0;
-  padding: 0;
   font-weight: normal;
-  font-size: 1em; }
+  font-size: 1em;
+  margin: 1em 0 1em 0;
+  padding: 0; }
 
 h6 {
-  margin: 1em 0 1em 0;
-  padding: 0;
   font-weight: normal;
-  font-size: 0.8em; }
+  font-size: 0.8em;
+  margin: 1em 0 1em 0;
+  padding: 0; }
 
 p {
-  font-weight: 400;
-  /* font-normal */
+  font-weight: normal;
   font-size: 1.2em;
-  /* font-size-normal */
   word-spacing: 0.2em;
   line-height: 1.5em; }
 
 ol, ul, li {
-  font-weight: 400;
-  /* font-normal */
+  font-weight: normal;
   font-size: 1.1em;
-  word-spacing: 0.2em;
   line-height: 1.5em; }
 
 a {
   word-wrap: break-word;
-  color: #0093c2; }
+  color: #4299cb; }
 
-strong {
-  font-weight: 600;
-  /* font-bold */ }
-
-/* end label and classes */
-/* code style */
-code {
-  font-family: 'Monaco', 'PrettyX Code', 'PrettyX Text English', 'Hiragino Sans GB', 'Heiti SC', 'Heiti TC', 'STHeiti', 'STXihei', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Arial', 'Verdana', 'Sans-Serif', serif;
-  font-size: 0.8em;
-  line-height: 1.05em;
-  word-spacing: 0;
-  padding: 0.1em;
-  overflow: hidden; }
-
-.code pre {
-  margin: 1em;
-  overflow: hidden; }
-  .code pre code {
-    border: 0;
-    background-color: transparent;
-    font-size: 0.9em; }
-    .code pre code span {
-      font-family: 'Monaco', 'PrettyX Code', 'PrettyX Text English', 'Hiragino Sans GB', 'Heiti SC', 'Heiti TC', 'STHeiti', 'STXihei', 'Lucida Grande', 'Helvetica Neue', 'Helvetica', 'Arial', 'Verdana', 'Sans-Serif', serif;
-      font-size: 0.9em;
-      line-height: 1.5em;
-      word-spacing: 0; }
-
-/* end code style */
-/* block quote */
-blockquote {
-  border-left-style: solid;
-  border-left-width: 4px;
-  color: #777777;
-  display: block;
-  font-size: 15px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 25px;
-  margin: 15px 0px 0px 0px;
-  padding: 0px 15px 0px 15px;
-  word-wrap: break-word; }
-
-/* block quote end */
 /* font which will be loaded by browser */
 @font-face {
   font-family: 'Source Sans Pro';

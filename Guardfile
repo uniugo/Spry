@@ -7,7 +7,7 @@ end
 
 # javascript
 guard 'process', :name => 'Compile JavaScript', :command => 'bash Compile javascript' do
-    watch %r{^js/(.+\.js)$}
+    watch %r{^javascript/(.+\.js)$}
 end
 
 guard "uglify", :input => "build/spry.js", :output => "build/spry.min.js"

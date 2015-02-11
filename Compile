@@ -20,5 +20,5 @@ elif [[ $1 == "css" ]]; then
 elif [[ $1 == "javascript" ]]; then
 
 	# compile javascript
-	cat js/* > build/spry.js
+	cat javascript/* > build/spry.js
 fi

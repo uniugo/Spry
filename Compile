@@ -1,13 +1,24 @@
 #!/bin/bash
 
-# CSS Compile
-sass --load-path css/* > build/spry.css
-sass --load-path css/* --style compressed > build/spry.min.css
+if [[ $1 == "website" ]]; then
+	
+	# build website
+	cd web
+	nanoc
+	cd ..
 
-# JavaScript Compile
-# javaScript Minify Handled by Guard Plugins
-cat js/* > build/spry.js
+elif [[ $1 == "css" ]]; then
+		
+	# compile css
+	sass --load-path css/* > build/spry.css
+	sass --load-path css/* --style compressed > build/spry.min.css
 
-# Fonts Compile
-#rm -rf build/font
-#cp -r font build/font
+	# copy fonts 
+	#rm -rf build/font
+	#cp -r font build/font
+
+elif [[ $1 == "javascript" ]]; then
+
+	# compile javascript
+	cat js/* > build/spry.js
+fi

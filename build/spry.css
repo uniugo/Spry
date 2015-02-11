@@ -2265,6 +2265,16 @@
         margin-left: 100%; } }
 
 /* global styles */
+::-moz-selection {
+  background: #00dad0;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #00dad0;
+  color: #fff;
+  text-shadow: none; }
+
 * {
   font-family: "Source Sans Pro", "Lucida Grande", "Helvetica Neue", "Hiragino Sans GB", "Heiti SC", "Heiti TC", "STHeiti", "STXihei", "Arial", "Microsoft YaHei";
   font-weight: 400;
@@ -2415,12 +2425,5 @@ mark, code {
   .separator.size-4 {
     height: 0.3em; }
 
-::-moz-selection {
-  background: #00dad0;
-  color: #fff;
-  text-shadow: none; }
-
-::selection {
-  background: #00dad0;
-  color: #fff;
-  text-shadow: none; }
+.center {
+  text-align: center; }

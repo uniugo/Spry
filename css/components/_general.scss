@@ -1,5 +1,17 @@
 /* global styles */
 
+::-moz-selection {
+    background: map_get($colors-spry-design, "cyan");
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: map_get($colors-spry-design, "cyan");
+    color: #fff;
+    text-shadow: none;
+}
+
 * {
     font-family: $font_priority_ui;
     font-weight: map_get($font_weight, "regular");
@@ -189,15 +201,6 @@ mark, code {
     }
 }
 
-// selection
-::-moz-selection {
-    background: map_get($colors-spry-design, "cyan");
-    color: #fff;
-    text-shadow: none;
-}
-
-::selection {
-    background: map_get($colors-spry-design, "cyan");
-    color: #fff;
-    text-shadow: none;
+.center {
+    text-align: center;
 }

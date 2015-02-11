@@ -2425,5 +2425,14 @@ mark, code {
   .separator.size-4 {
     height: 0.3em; }
 
+.space {
+  width: 100%; }
+  .space.size-1 {
+    height: 0.5em; }
+  .space.size-2 {
+    height: 1em; }
+  .space.size-3 {
+    height: 2em; }
+
 .center {
   text-align: center; }

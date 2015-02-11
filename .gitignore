@@ -4,3 +4,4 @@
 .lock
 
 web/tmp
+web/crash.log

@@ -201,6 +201,22 @@ mark, code {
     }
 }
 
+.space {
+    width: 100%;
+
+    &.size-1 {
+        height: 0.5em;
+    }
+
+    &.size-2 {
+        height: 1em;
+    }
+
+    &.size-3 {
+        height: 2em;
+    }
+}
+
 .center {
     text-align: center;
 }

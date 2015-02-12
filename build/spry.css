@@ -13,6 +13,12 @@
 .color-spry-black-back {
   background-color: #000000 !important; }
 
+.color-spry-grey-moon {
+  color: #fafbfc !important; }
+
+.color-spry-grey-moon-back {
+  background-color: #fafbfc !important; }
+
 .color-spry-grey-smoke {
   color: #f7f7f7 !important; }
 
@@ -109,11 +115,17 @@
 .color-spry-blue-bond-back {
   background-color: #198d98 !important; }
 
-.color-spry-cyan {
+.color-spry-cyan-bright {
   color: #00dad0 !important; }
 
-.color-spry-cyan-back {
+.color-spry-cyan-bright-back {
   background-color: #00dad0 !important; }
+
+.color-spry-cyan {
+  color: #20c8c0 !important; }
+
+.color-spry-cyan-back {
+  background-color: #20c8c0 !important; }
 
 .color-spry-cyan-viking {
   color: #41bdc5 !important; }
@@ -2733,7 +2745,8 @@ blockquote {
   font-size: 1.2rem;
   line-height: 1.5rem;
   padding: 0 1rem;
-  border-left: 0.3rem solid; }
+  color: #737373;
+  border-left: 0.3rem solid #e4e4e4; }
 
 mark, code {
   font-family: "Source Code Pro", "Lucida Grande", "Helvetica Neue", "Hiragino Sans GB", "Heiti SC", "Heiti TC", "STHeiti", "STXihei", "Arial", "Microsoft YaHei";
@@ -2742,10 +2755,12 @@ mark, code {
   word-spacing: 0;
   word-wrap: break-word;
   padding: 0.1rem;
-  border: 0.1rem solid; }
+  border: 0.1rem solid #cacaca;
+  background-color: #f7f7f7; }
 
 .code {
-  border: 0.1rem solid; }
+  border: 0.1rem solid #cacaca;
+  background-color: #fafbfc; }
   .code pre {
     margin: 1rem; }
     .code pre code {

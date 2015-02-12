@@ -1,13 +1,13 @@
 /* global styles */
 
 ::-moz-selection {
-    background: map_get($colors-spry-design, "cyan");
+    background: map_get($colors-spry-design, "cyan-bright");
     color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: map_get($colors-spry-design, "cyan");
+    background: map_get($colors-spry-design, "cyan-bright");
     color: #fff;
     text-shadow: none;
 }
@@ -141,8 +141,8 @@ blockquote {
     font-size: 1.2rem;
     line-height: 1.5rem;
     padding: 0 1rem;
-    color: map_get($colors-spry-design, "storm-grey");
-    border-left: 0.3rem solid map_get($colors-spry-design, "platinum");
+    color: map_get($colors-spry-design, "grey-storm");
+    border-left: 0.3rem solid map_get($colors-spry-design, "grey-platinum");
 }
 
 mark, code {
@@ -152,13 +152,13 @@ mark, code {
     word-spacing: 0;
     word-wrap: break-word;
     padding: 0.1rem;
-    border: 0.1rem solid map_get($colors-spry-design, "iron");
-    background-color: map_get($colors-spry-design, "ghost-white");
+    border: 0.1rem solid map_get($colors-spry-design, "grey-iron");
+    background-color: map_get($colors-spry-design, "grey-smoke");
 }
 
 .code {
-    border: 0.1rem solid map_get($colors-spry-design, "iron");
-    background-color: map_get($colors-spry-design, "ghost-white");
+    border: 0.1rem solid map_get($colors-spry-design, "grey-iron");
+    background-color: map_get($colors-spry-design, "grey-moon");
 
     pre {
         margin: 1rem;

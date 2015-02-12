@@ -1,0 +1,66 @@
+/* colors definition of windows phone design */
+
+$colors-ios7-design: (
+
+    "white": #ffffff,
+    "black": #000000,
+
+    "grey-1": #f7f7f8,
+    "grey-2": #8b8e93,
+    "grey-3": #545454,
+    "grey-4": #484848,
+    "grey-5": #323232,
+
+    "pink-1": #fbc6d1,
+    "pink-2": #d783a7,
+    "pink-3": #ac3f65,
+    "pink-4": #fc5bc4,
+
+    "red-1": #ff2968,
+    "red-2": #de1d26,
+    "red-3": #d11b12,
+
+    "orange-1": #f26f64,
+    "orange-2": #ff5c39,
+
+    "purple-1": #cc73e1,
+    "purple-2": #a844f6,
+    "purple-3": #ad8dc1,
+    "purple-4": #67569b,
+
+    "yellow-1": #f0e24a,
+    "yellow-2": #ffde49,
+    "yellow-3": #ffd044,
+    "yellow-4": #ecbf3e,
+    "yellow-5": #dea736,
+    "yellow-6": #faa938,
+    "yellow-7": #ff9532,
+
+    "blue-1": #7ceafd,
+    "blue-2": #5ac9f7,
+    "blue-3": #1aadf8,
+    "blue-4": #3f9bf8,
+    "blue-5": #2078ef,
+    "blue-6": #7ea9d8,
+    "blue-7": #3c73a4,
+
+    "green-1": #8efe74,
+    "green-2": #63da43,
+    "green-3": #0dd440,
+    "green-4": #76c53d,
+    "green-5": #72ae35,
+    "green-6": #afd45a,
+    "green-7": #39945c,
+    "green-8": #4ad9b5,
+    "green-9": #6cbfa9,
+);
+
+// Generate Colors
+@each $color_name, $color_value in $colors-ios7-design {
+    .color-ios7-#{$color_name} {
+        color: $color_value !important;
+    }
+    .color-ios7-#{$color_name}-back {
+        background-color: $color_value !important;
+    }
+}

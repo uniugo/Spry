@@ -73,11 +73,23 @@
 .color-spry-red-back {
   background-color: #ff3e67 !important; }
 
+.color-spry-red-orange {
+  color: #fb544b !important; }
+
+.color-spry-red-orange-back {
+  background-color: #fb544b !important; }
+
 .color-spry-green {
   color: #64c778 !important; }
 
 .color-spry-green-back {
   background-color: #64c778 !important; }
+
+.color-spry-green-shamrock {
+  color: #009757 !important; }
+
+.color-spry-green-shamrock-back {
+  background-color: #009757 !important; }
 
 .color-spry-yellow {
   color: #ffdc36 !important; }
@@ -91,6 +103,12 @@
 .color-spry-blue-back {
   background-color: #4299cb !important; }
 
+.color-spry-blue-bond {
+  color: #198d98 !important; }
+
+.color-spry-blue-bond-back {
+  background-color: #198d98 !important; }
+
 .color-spry-cyan {
   color: #00dad0 !important; }
 
@@ -102,24 +120,6 @@
 
 .color-spry-cyan-viking-back {
   background-color: #41bdc5 !important; }
-
-.color-spry-bond-blue {
-  color: #198d98 !important; }
-
-.color-spry-bond-blue-back {
-  background-color: #198d98 !important; }
-
-.color-spry-shamrock-green {
-  color: #009757 !important; }
-
-.color-spry-shamrock-green-back {
-  background-color: #009757 !important; }
-
-.color-spry-red-orange {
-  color: #fb544b !important; }
-
-.color-spry-red-orange-back {
-  background-color: #fb544b !important; }
 
 /* colors definition of material design */
 .color-material-red.lighten-5 {

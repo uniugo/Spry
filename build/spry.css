@@ -13,6 +13,60 @@
 .color-spry-black-back {
   background-color: #000000 !important; }
 
+.color-spry-grey-smoke {
+  color: #f7f7f7 !important; }
+
+.color-spry-grey-smoke-back {
+  background-color: #f7f7f7 !important; }
+
+.color-spry-grey-platinum {
+  color: #e4e4e4 !important; }
+
+.color-spry-grey-platinum-back {
+  background-color: #e4e4e4 !important; }
+
+.color-spry-grey-iron {
+  color: #cacaca !important; }
+
+.color-spry-grey-iron-back {
+  background-color: #cacaca !important; }
+
+.color-spry-grey-ghost {
+  color: #b0b0b0 !important; }
+
+.color-spry-grey-ghost-back {
+  background-color: #b0b0b0 !important; }
+
+.color-spry-grey {
+  color: #a3a3a3 !important; }
+
+.color-spry-grey-back {
+  background-color: #a3a3a3 !important; }
+
+.color-spry-grey-shady {
+  color: #8c8c8c !important; }
+
+.color-spry-grey-shady-back {
+  background-color: #8c8c8c !important; }
+
+.color-spry-grey-storm {
+  color: #737373 !important; }
+
+.color-spry-grey-storm-back {
+  background-color: #737373 !important; }
+
+.color-spry-grey-stone {
+  color: #363d48 !important; }
+
+.color-spry-grey-stone-back {
+  background-color: #363d48 !important; }
+
+.color-spry-grey-mine {
+  color: #333333 !important; }
+
+.color-spry-grey-mine-back {
+  background-color: #333333 !important; }
+
 .color-spry-red {
   color: #ff3e67 !important; }
 
@@ -43,94 +97,10 @@
 .color-spry-cyan-back {
   background-color: #00dad0 !important; }
 
-.color-spry-ghost-white {
-  color: #fafbfc !important; }
-
-.color-spry-ghost-white-back {
-  background-color: #fafbfc !important; }
-
-.color-spry-white-smoke {
-  color: #f7f7f7 !important; }
-
-.color-spry-white-smoke-back {
-  background-color: #f7f7f7 !important; }
-
-.color-spry-blue-moon {
-  color: #eeeeff !important; }
-
-.color-spry-blue-moon-back {
-  background-color: #eeeeff !important; }
-
-.color-spry-solitude {
-  color: #e9eff5 !important; }
-
-.color-spry-solitude-back {
-  background-color: #e9eff5 !important; }
-
-.color-spry-platinum {
-  color: #e4e4e4 !important; }
-
-.color-spry-platinum-back {
-  background-color: #e4e4e4 !important; }
-
-.color-spry-lilac {
-  color: #e6e9eb !important; }
-
-.color-spry-lilac-back {
-  background-color: #e6e9eb !important; }
-
-.color-spry-lily-white {
-  color: #eaeaea !important; }
-
-.color-spry-lily-white-back {
-  background-color: #eaeaea !important; }
-
-.color-spry-iron {
-  color: #cacaca !important; }
-
-.color-spry-iron-back {
-  background-color: #cacaca !important; }
-
-.color-spry-ghost {
-  color: #c3c4c7 !important; }
-
-.color-spry-ghost-back {
-  background-color: #c3c4c7 !important; }
-
-.color-spry-shady-lady {
-  color: #9e9e9f !important; }
-
-.color-spry-shady-lady-back {
-  background-color: #9e9e9f !important; }
-
-.color-spry-bombay {
-  color: #a0a0a0 !important; }
-
-.color-spry-bombay-back {
-  background-color: #a0a0a0 !important; }
-
-.color-spry-storm-grey {
-  color: #737a87 !important; }
-
-.color-spry-storm-grey-back {
-  background-color: #737a87 !important; }
-
-.color-spry-big-stone {
-  color: #363d48 !important; }
-
-.color-spry-big-stone-back {
-  background-color: #363d48 !important; }
-
-.color-spry-oil {
-  color: #333333 !important; }
-
-.color-spry-oil-back {
-  background-color: #333333 !important; }
-
-.color-spry-viking {
+.color-spry-cyan-viking {
   color: #41bdc5 !important; }
 
-.color-spry-viking-back {
+.color-spry-cyan-viking-back {
   background-color: #41bdc5 !important; }
 
 .color-spry-bond-blue {
@@ -1688,6 +1658,386 @@
 .color-material-shades-back.white-back {
   background-color: #FFFFFF !important; }
 
+/* colors definition of windows phone design */
+.color-windows-phone-pink {
+  color: #f472d0 !important; }
+
+.color-windows-phone-pink-back {
+  background-color: #f472d0 !important; }
+
+.color-windows-phone-magenta {
+  color: #d80073 !important; }
+
+.color-windows-phone-magenta-back {
+  background-color: #d80073 !important; }
+
+.color-windows-phone-red {
+  color: #e51400 !important; }
+
+.color-windows-phone-red-back {
+  background-color: #e51400 !important; }
+
+.color-windows-phone-crimson {
+  color: #a20025 !important; }
+
+.color-windows-phone-crimson-back {
+  background-color: #a20025 !important; }
+
+.color-windows-phone-yellow {
+  color: #e3c800 !important; }
+
+.color-windows-phone-yellow-back {
+  background-color: #e3c800 !important; }
+
+.color-windows-phone-amber {
+  color: #f0a30a !important; }
+
+.color-windows-phone-amber-back {
+  background-color: #f0a30a !important; }
+
+.color-windows-phone-orange {
+  color: #fa6800 !important; }
+
+.color-windows-phone-orange-back {
+  background-color: #fa6800 !important; }
+
+.color-windows-phone-violet {
+  color: #aa00ff !important; }
+
+.color-windows-phone-violet-back {
+  background-color: #aa00ff !important; }
+
+.color-windows-phone-indigo {
+  color: #6a00ff !important; }
+
+.color-windows-phone-indigo-back {
+  background-color: #6a00ff !important; }
+
+.color-windows-phone-cyan {
+  color: #1ba1e2 !important; }
+
+.color-windows-phone-cyan-back {
+  background-color: #1ba1e2 !important; }
+
+.color-windows-phone-cobalt {
+  color: #0050ef !important; }
+
+.color-windows-phone-cobalt-back {
+  background-color: #0050ef !important; }
+
+.color-windows-phone-teal {
+  color: #00aba9 !important; }
+
+.color-windows-phone-teal-back {
+  background-color: #00aba9 !important; }
+
+.color-windows-phone-lime {
+  color: #a4c400 !important; }
+
+.color-windows-phone-lime-back {
+  background-color: #a4c400 !important; }
+
+.color-windows-phone-green {
+  color: #60a917 !important; }
+
+.color-windows-phone-green-back {
+  background-color: #60a917 !important; }
+
+.color-windows-phone-emerald {
+  color: #008a00 !important; }
+
+.color-windows-phone-emerald-back {
+  background-color: #008a00 !important; }
+
+.color-windows-phone-olive {
+  color: #6d8764 !important; }
+
+.color-windows-phone-olive-back {
+  background-color: #6d8764 !important; }
+
+.color-windows-phone-mauve {
+  color: #76608a !important; }
+
+.color-windows-phone-mauve-back {
+  background-color: #76608a !important; }
+
+.color-windows-phone-steel {
+  color: #647687 !important; }
+
+.color-windows-phone-steel-back {
+  background-color: #647687 !important; }
+
+.color-windows-phone-taupe {
+  color: #87794E !important; }
+
+.color-windows-phone-taupe-back {
+  background-color: #87794E !important; }
+
+.color-windows-phone-brown {
+  color: #825a2c !important; }
+
+.color-windows-phone-brown-back {
+  background-color: #825a2c !important; }
+
+/* colors definition of windows phone design */
+.color-ios7-white {
+  color: #ffffff !important; }
+
+.color-ios7-white-back {
+  background-color: #ffffff !important; }
+
+.color-ios7-black {
+  color: #000000 !important; }
+
+.color-ios7-black-back {
+  background-color: #000000 !important; }
+
+.color-ios7-grey-1 {
+  color: #f7f7f8 !important; }
+
+.color-ios7-grey-1-back {
+  background-color: #f7f7f8 !important; }
+
+.color-ios7-grey-2 {
+  color: #8b8e93 !important; }
+
+.color-ios7-grey-2-back {
+  background-color: #8b8e93 !important; }
+
+.color-ios7-grey-3 {
+  color: #545454 !important; }
+
+.color-ios7-grey-3-back {
+  background-color: #545454 !important; }
+
+.color-ios7-grey-4 {
+  color: #484848 !important; }
+
+.color-ios7-grey-4-back {
+  background-color: #484848 !important; }
+
+.color-ios7-grey-5 {
+  color: #323232 !important; }
+
+.color-ios7-grey-5-back {
+  background-color: #323232 !important; }
+
+.color-ios7-pink-1 {
+  color: #fbc6d1 !important; }
+
+.color-ios7-pink-1-back {
+  background-color: #fbc6d1 !important; }
+
+.color-ios7-pink-2 {
+  color: #d783a7 !important; }
+
+.color-ios7-pink-2-back {
+  background-color: #d783a7 !important; }
+
+.color-ios7-pink-3 {
+  color: #ac3f65 !important; }
+
+.color-ios7-pink-3-back {
+  background-color: #ac3f65 !important; }
+
+.color-ios7-pink-4 {
+  color: #fc5bc4 !important; }
+
+.color-ios7-pink-4-back {
+  background-color: #fc5bc4 !important; }
+
+.color-ios7-red-1 {
+  color: #ff2968 !important; }
+
+.color-ios7-red-1-back {
+  background-color: #ff2968 !important; }
+
+.color-ios7-red-2 {
+  color: #de1d26 !important; }
+
+.color-ios7-red-2-back {
+  background-color: #de1d26 !important; }
+
+.color-ios7-red-3 {
+  color: #d11b12 !important; }
+
+.color-ios7-red-3-back {
+  background-color: #d11b12 !important; }
+
+.color-ios7-orange-1 {
+  color: #f26f64 !important; }
+
+.color-ios7-orange-1-back {
+  background-color: #f26f64 !important; }
+
+.color-ios7-orange-2 {
+  color: #ff5c39 !important; }
+
+.color-ios7-orange-2-back {
+  background-color: #ff5c39 !important; }
+
+.color-ios7-purple-1 {
+  color: #cc73e1 !important; }
+
+.color-ios7-purple-1-back {
+  background-color: #cc73e1 !important; }
+
+.color-ios7-purple-2 {
+  color: #a844f6 !important; }
+
+.color-ios7-purple-2-back {
+  background-color: #a844f6 !important; }
+
+.color-ios7-purple-3 {
+  color: #ad8dc1 !important; }
+
+.color-ios7-purple-3-back {
+  background-color: #ad8dc1 !important; }
+
+.color-ios7-purple-4 {
+  color: #67569b !important; }
+
+.color-ios7-purple-4-back {
+  background-color: #67569b !important; }
+
+.color-ios7-yellow-1 {
+  color: #f0e24a !important; }
+
+.color-ios7-yellow-1-back {
+  background-color: #f0e24a !important; }
+
+.color-ios7-yellow-2 {
+  color: #ffde49 !important; }
+
+.color-ios7-yellow-2-back {
+  background-color: #ffde49 !important; }
+
+.color-ios7-yellow-3 {
+  color: #ffd044 !important; }
+
+.color-ios7-yellow-3-back {
+  background-color: #ffd044 !important; }
+
+.color-ios7-yellow-4 {
+  color: #ecbf3e !important; }
+
+.color-ios7-yellow-4-back {
+  background-color: #ecbf3e !important; }
+
+.color-ios7-yellow-5 {
+  color: #dea736 !important; }
+
+.color-ios7-yellow-5-back {
+  background-color: #dea736 !important; }
+
+.color-ios7-yellow-6 {
+  color: #faa938 !important; }
+
+.color-ios7-yellow-6-back {
+  background-color: #faa938 !important; }
+
+.color-ios7-yellow-7 {
+  color: #ff9532 !important; }
+
+.color-ios7-yellow-7-back {
+  background-color: #ff9532 !important; }
+
+.color-ios7-blue-1 {
+  color: #7ceafd !important; }
+
+.color-ios7-blue-1-back {
+  background-color: #7ceafd !important; }
+
+.color-ios7-blue-2 {
+  color: #5ac9f7 !important; }
+
+.color-ios7-blue-2-back {
+  background-color: #5ac9f7 !important; }
+
+.color-ios7-blue-3 {
+  color: #1aadf8 !important; }
+
+.color-ios7-blue-3-back {
+  background-color: #1aadf8 !important; }
+
+.color-ios7-blue-4 {
+  color: #3f9bf8 !important; }
+
+.color-ios7-blue-4-back {
+  background-color: #3f9bf8 !important; }
+
+.color-ios7-blue-5 {
+  color: #2078ef !important; }
+
+.color-ios7-blue-5-back {
+  background-color: #2078ef !important; }
+
+.color-ios7-blue-6 {
+  color: #7ea9d8 !important; }
+
+.color-ios7-blue-6-back {
+  background-color: #7ea9d8 !important; }
+
+.color-ios7-blue-7 {
+  color: #3c73a4 !important; }
+
+.color-ios7-blue-7-back {
+  background-color: #3c73a4 !important; }
+
+.color-ios7-green-1 {
+  color: #8efe74 !important; }
+
+.color-ios7-green-1-back {
+  background-color: #8efe74 !important; }
+
+.color-ios7-green-2 {
+  color: #63da43 !important; }
+
+.color-ios7-green-2-back {
+  background-color: #63da43 !important; }
+
+.color-ios7-green-3 {
+  color: #0dd440 !important; }
+
+.color-ios7-green-3-back {
+  background-color: #0dd440 !important; }
+
+.color-ios7-green-4 {
+  color: #76c53d !important; }
+
+.color-ios7-green-4-back {
+  background-color: #76c53d !important; }
+
+.color-ios7-green-5 {
+  color: #72ae35 !important; }
+
+.color-ios7-green-5-back {
+  background-color: #72ae35 !important; }
+
+.color-ios7-green-6 {
+  color: #afd45a !important; }
+
+.color-ios7-green-6-back {
+  background-color: #afd45a !important; }
+
+.color-ios7-green-7 {
+  color: #39945c !important; }
+
+.color-ios7-green-7-back {
+  background-color: #39945c !important; }
+
+.color-ios7-green-8 {
+  color: #4ad9b5 !important; }
+
+.color-ios7-green-8-back {
+  background-color: #4ad9b5 !important; }
+
+.color-ios7-green-9 {
+  color: #6cbfa9 !important; }
+
+.color-ios7-green-9-back {
+  background-color: #6cbfa9 !important; }
+
 /* typeface management */
 /*
  * UI font priority:
@@ -2383,8 +2733,7 @@ blockquote {
   font-size: 1.2rem;
   line-height: 1.5rem;
   padding: 0 1rem;
-  color: #737a87;
-  border-left: 0.3rem solid #e4e4e4; }
+  border-left: 0.3rem solid; }
 
 mark, code {
   font-family: "Source Code Pro", "Lucida Grande", "Helvetica Neue", "Hiragino Sans GB", "Heiti SC", "Heiti TC", "STHeiti", "STXihei", "Arial", "Microsoft YaHei";
@@ -2393,12 +2742,10 @@ mark, code {
   word-spacing: 0;
   word-wrap: break-word;
   padding: 0.1rem;
-  border: 0.1rem solid #cacaca;
-  background-color: #fafbfc; }
+  border: 0.1rem solid; }
 
 .code {
-  border: 0.1rem solid #cacaca;
-  background-color: #fafbfc; }
+  border: 0.1rem solid; }
   .code pre {
     margin: 1rem; }
     .code pre code {

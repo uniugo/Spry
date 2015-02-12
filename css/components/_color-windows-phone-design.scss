@@ -1,0 +1,34 @@
+/* colors definition of windows phone design */
+
+$colors-windows-phone-design: (
+    "pink":    #f472d0,
+    "magenta": #d80073,
+    "red":     #e51400,
+    "crimson": #a20025,
+    "yellow":  #e3c800,
+    "amber":   #f0a30a,
+    "orange":  #fa6800,
+    "violet":  #aa00ff,
+    "indigo":  #6a00ff,
+    "cyan":    #1ba1e2,
+    "cobalt":  #0050ef,
+    "teal":    #00aba9,
+    "lime":    #a4c400,
+    "green":   #60a917,
+    "emerald": #008a00,
+    "olive":   #6d8764,
+    "mauve":   #76608a,
+    "steel":   #647687,
+    "taupe":   #87794E,
+    "brown":   #825a2c
+);
+
+// Generate Colors
+@each $color_name, $color_value in $colors-windows-phone-design {
+    .color-windows-phone-#{$color_name} {
+        color: $color_value !important;
+    }
+    .color-windows-phone-#{$color_name}-back {
+        background-color: $color_value !important;
+    }
+}

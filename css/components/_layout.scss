@@ -8,8 +8,8 @@ $screen-point-large: 1200px !default;
 $screen-medium-and-up: "only screen and (min-width : #{$screen-point-medium})" !default;
 $screen-medium-and-down: "only screen and (max-width : #{$screen-point-large})" !default;
 $screen-large-and-up: "only screen and (min-width : #{$screen-point-large})" !default;
-$small-and-down: "only screen and (max-width : #{$screen-point-small})" !default;
-$medium-only: "only screen and (min-width : #{$screen-point-small}) and (max-width : #{$screen-point-medium})" !default;
+$screen-small-and-down: "only screen and (max-width : #{$screen-point-small})" !default;
+$screen-medium-only: "only screen and (min-width : #{$screen-point-small}) and (max-width : #{$screen-point-medium})" !default;
 
 // space
 $column_number: 12;
@@ -53,14 +53,13 @@ $spacing_value: 1.5em;
     margin-right: auto;
     margin-bottom: 20px;
 
-    // Clear floating children
     &:after {
         content: "";
         display: table;
         clear: both;
     }
 
-    .col {
+    .column {
         @include transition(all .3s);
         @include border-box();
         float: left;

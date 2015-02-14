@@ -2426,8 +2426,7 @@
 
 .row {
   margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px; }
+  margin-right: auto; }
   .row:after {
     content: "";
     display: table;
@@ -2626,123 +2625,155 @@
       .row .column.offset-l12 {
         margin-left: 100%; } }
 
-#navigator {
+.navigator {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  color: #333333;
   background-color: rgba(228, 228, 228, 0.8); }
-  #navigator .brand {
+  .navigator .brand {
     padding: 0 1rem;
     display: inline-block;
     height: 60px;
     line-height: 60px; }
-    #navigator .brand a {
+    .navigator .brand a {
       color: #333333;
       font-size: 2rem;
       font-weight: 100; }
     @media only screen and (max-width: 600px) {
-      #navigator .brand {
+      .navigator .brand {
         left: 0;
         width: 100%;
         text-align: center;
         padding: 0; } }
-  #navigator .department {
+  .navigator .headquarter {
     float: right;
     padding: 0 1rem;
     display: inline-block; }
-    #navigator .department ul {
-      margin: 0;
-      padding: 0;
-      float: right;
+    .navigator .headquarter .department {
+      float: left;
+      padding: 0 0.5rem;
+      margin: 0 0.5rem;
       height: 60px;
       line-height: 60px; }
-      #navigator .department ul li {
-        float: left;
-        padding: 0 0.5rem;
-        margin: 0 0.5rem;
-        height: 60px;
-        line-height: 60px;
-        list-style: none;
-        text-align: center; }
-        #navigator .department ul li a {
-          color: #333333;
-          font-size: 1.3rem;
-          font-weight: 100;
+      .navigator .headquarter .department a {
+        color: #333333;
+        font-size: 1.3rem;
+        font-weight: 100;
+        -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
+        .navigator .headquarter .department a:hover {
+          color: #cacaca;
           -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
-          #navigator .department ul li a:hover {
-            color: #cacaca;
-            -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-            -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-            -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-            -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-            transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
     @media only screen and (max-width: 600px) {
-      #navigator .department {
+      .navigator .headquarter {
         display: none; } }
+  .navigator .headquarter-mobile {
+    display: none;
+    text-align: center;
+    border-top: solid 0.1rem #ffffff;
+    background-color: rgba(228, 228, 228, 0.8); }
+    .navigator .headquarter-mobile .department {
+      float: left;
+      height: 60px;
+      line-height: 60px; }
+      .navigator .headquarter-mobile .department a {
+        color: #333333;
+        font-size: 1.3rem;
+        font-weight: 100;
+        -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
+        .navigator .headquarter-mobile .department a:hover {
+          color: #cacaca;
+          -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
 
-#navigator-transparent {
+.navigator-transparent {
   width: 100%;
   height: 60px;
   line-height: 60px;
-  color: #ffffff;
   background-color: transparent; }
-  #navigator-transparent .brand {
+  .navigator-transparent .brand {
     padding: 0 1rem;
     display: inline-block;
     height: 60px;
     line-height: 60px; }
-    #navigator-transparent .brand a {
+    .navigator-transparent .brand a {
       color: #ffffff;
       font-size: 2rem;
       font-weight: 100; }
     @media only screen and (max-width: 600px) {
-      #navigator-transparent .brand {
+      .navigator-transparent .brand {
         left: 0;
         width: 100%;
         text-align: center;
         padding: 0; } }
-  #navigator-transparent .department {
+  .navigator-transparent .headquarter {
     float: right;
     padding: 0 1rem;
     display: inline-block; }
-    #navigator-transparent .department ul {
-      margin: 0;
-      padding: 0;
-      float: right;
+    .navigator-transparent .headquarter .department {
+      float: left;
+      padding: 0 0.5rem;
+      margin: 0 0.5rem;
       height: 60px;
       line-height: 60px; }
-      #navigator-transparent .department ul li {
-        float: left;
-        padding: 0 0.5rem;
-        margin: 0 0.5rem;
-        height: 60px;
-        line-height: 60px;
-        list-style: none;
-        text-align: center; }
-        #navigator-transparent .department ul li a {
-          color: #ffffff;
-          font-size: 1.3rem;
-          font-weight: 100;
+      .navigator-transparent .headquarter .department a {
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 100;
+        -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
+        .navigator-transparent .headquarter .department a:hover {
+          color: #cacaca;
           -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
-          #navigator-transparent .department ul li a:hover {
-            color: #cacaca;
-            -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-            -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-            -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-            -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-            transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
     @media only screen and (max-width: 600px) {
-      #navigator-transparent .department {
+      .navigator-transparent .headquarter {
         display: none; } }
+  .navigator-transparent .headquarter-mobile {
+    display: none;
+    text-align: center;
+    border-top: solid 0.1rem #ffffff;
+    background-color: transparent; }
+    .navigator-transparent .headquarter-mobile .department {
+      float: left;
+      height: 60px;
+      line-height: 60px; }
+      .navigator-transparent .headquarter-mobile .department a {
+        color: #ffffff;
+        font-size: 1.3rem;
+        font-weight: 100;
+        -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+        transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
+        .navigator-transparent .headquarter-mobile .department a:hover {
+          color: #cacaca;
+          -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
+          transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
 
 /* global styles */
 ::-moz-selection {

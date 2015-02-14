@@ -5,7 +5,7 @@ $navigator-bar-height: 60px !default;
     width: 100%;
     height: $navigator-bar-height;
     line-height: $navigator-bar-height;
-    color: $text-color;
+
     background-color: $background-color;
 
     .brand {
@@ -28,39 +28,29 @@ $navigator-bar-height: 60px !default;
         }
     }
 
-    .department {
+    .headquarter {
         float: right;
         padding: 0 1rem;
         display: inline-block;
 
-        ul {
-            margin: 0;
-            padding: 0;
-            float: right;
+        .department {
+            float: left;
+            padding: 0 0.5rem;
+            margin: 0 0.5rem;
+
             height: $navigator-bar-height;
             line-height: $navigator-bar-height;
 
-            li {
-                float: left;
-                padding: 0 0.5rem;
-                margin: 0 0.5rem;
-                height: $navigator-bar-height;
-                line-height: $navigator-bar-height;
+            a {
+                color: $text-color;
+                font-size: map_get($font_size, "large");
+                font-weight: map_get($font_weight, "thin-extreme");
 
-                list-style: none;
-                text-align: center;
+                @include transition(color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s);
 
-                a {
-                    color: $text-color;
-                    font-size: map_get($font_size, "large");
-                    font-weight: map_get($font_weight, "thin-extreme");
-
+                &:hover {
+                    color: map_get($colors-spry-design, "grey-iron");
                     @include transition(color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s);
-
-                    &:hover {
-                        color: map_get($colors-spry-design, "grey-iron");
-                        @include transition(color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s);
-                    }
                 }
             }
         }
@@ -69,15 +59,43 @@ $navigator-bar-height: 60px !default;
             display: none;
         }
     }
+
+    .headquarter-mobile {
+        display: none;
+
+        text-align: center;
+        border-top: solid 0.1rem map_get($colors-spry-design, "white");
+        background-color: $background-color;
+
+        .department {
+            float: left;
+
+            height: $navigator-bar-height;
+            line-height: $navigator-bar-height;
+
+            a {
+                color: $text-color;
+                font-size: map_get($font_size, "large");
+                font-weight: map_get($font_weight, "thin-extreme");
+
+                @include transition(color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s);
+
+                &:hover {
+                    color: map_get($colors-spry-design, "grey-iron");
+                    @include transition(color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s);
+                }
+            }
+        }
+    }
 }
 
-#navigator {
+.navigator {
     @include navigators(
         map_get($colors-spry-design, "grey-mine"),
         transparentize(map_get($colors-spry-design, "grey-platinum"), 0.2)
     );
 }
 
-#navigator-transparent {
+.navigator-transparent {
     @include navigators(map_get($colors-spry-design, "white"), transparent);
 }

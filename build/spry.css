@@ -2667,20 +2667,20 @@
       color: #333333;
       font-size: 2rem;
       font-weight: 100; }
-  .navigator .gather {
+  .navigator .travel {
     float: right;
     padding: 0 1rem;
     display: inline-block; }
     @media only screen and (max-width: 600px) {
-      .navigator .gather {
+      .navigator .travel {
         display: none; } }
-    .navigator .gather .direction {
+    .navigator .travel .direction {
       float: left;
       padding: 0 0.5rem;
       margin: 0 0.5rem;
       height: 60px;
       line-height: 60px; }
-      .navigator .gather .direction a {
+      .navigator .travel .direction a {
         color: #333333;
         font-size: 1.3rem;
         font-weight: 100;
@@ -2689,17 +2689,17 @@
         -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
-        .navigator .gather .direction a:hover {
+        .navigator .travel .direction a:hover {
           color: #cacaca;
           -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
-  .navigator .gather-mobile-button {
+  .navigator .travel-mobile-button {
     display: none; }
     @media only screen and (max-width: 600px) {
-      .navigator .gather-mobile-button {
+      .navigator .travel-mobile-button {
         display: block;
         top: 0;
         position: absolute;
@@ -2709,16 +2709,16 @@
         color: rgba(51, 51, 51, 0.8);
         font-size: 2rem;
         font-weight: 100; } }
-  .navigator .gather-mobile {
+  .navigator .travel-mobile {
     display: none;
     text-align: center;
     border-top: solid 0.1rem #ffffff;
     background-color: rgba(228, 228, 228, 0.8); }
-    .navigator .gather-mobile .direction {
+    .navigator .travel-mobile .direction {
       float: left;
       height: 60px;
       line-height: 60px; }
-      .navigator .gather-mobile .direction a {
+      .navigator .travel-mobile .direction a {
         color: #333333;
         font-size: 1.3rem;
         font-weight: 100;
@@ -2727,7 +2727,7 @@
         -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
-        .navigator .gather-mobile .direction a:hover {
+        .navigator .travel-mobile .direction a:hover {
           color: #cacaca;
           -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
@@ -2755,20 +2755,20 @@
       color: #ffffff;
       font-size: 2rem;
       font-weight: 100; }
-  .navigator-transparent .gather {
+  .navigator-transparent .travel {
     float: right;
     padding: 0 1rem;
     display: inline-block; }
     @media only screen and (max-width: 600px) {
-      .navigator-transparent .gather {
+      .navigator-transparent .travel {
         display: none; } }
-    .navigator-transparent .gather .direction {
+    .navigator-transparent .travel .direction {
       float: left;
       padding: 0 0.5rem;
       margin: 0 0.5rem;
       height: 60px;
       line-height: 60px; }
-      .navigator-transparent .gather .direction a {
+      .navigator-transparent .travel .direction a {
         color: #ffffff;
         font-size: 1.3rem;
         font-weight: 100;
@@ -2777,17 +2777,17 @@
         -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
-        .navigator-transparent .gather .direction a:hover {
+        .navigator-transparent .travel .direction a:hover {
           color: #cacaca;
           -webkit-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -moz-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -ms-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -o-transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           transition: color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
-  .navigator-transparent .gather-mobile-button {
+  .navigator-transparent .travel-mobile-button {
     display: none; }
     @media only screen and (max-width: 600px) {
-      .navigator-transparent .gather-mobile-button {
+      .navigator-transparent .travel-mobile-button {
         display: block;
         top: 0;
         position: absolute;
@@ -2797,16 +2797,16 @@
         color: rgba(255, 255, 255, 0.8);
         font-size: 2rem;
         font-weight: 100; } }
-  .navigator-transparent .gather-mobile {
+  .navigator-transparent .travel-mobile {
     display: none;
     text-align: center;
     border-top: solid 0.1rem #ffffff;
     background-color: transparent; }
-    .navigator-transparent .gather-mobile .direction {
+    .navigator-transparent .travel-mobile .direction {
       float: left;
       height: 60px;
       line-height: 60px; }
-      .navigator-transparent .gather-mobile .direction a {
+      .navigator-transparent .travel-mobile .direction a {
         color: #ffffff;
         font-size: 1.3rem;
         font-weight: 100;
@@ -2815,7 +2815,7 @@
         -ms-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         -o-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
         transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; }
-        .navigator-transparent .gather-mobile .direction a:hover {
+        .navigator-transparent .travel-mobile .direction a:hover {
           color: #cacaca;
           -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
           -moz-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;

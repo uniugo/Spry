@@ -28,7 +28,7 @@ $navigator-bar-height: 60px !default;
         }
     }
 
-    .gather {
+    .travel {
         float: right;
         padding: 0 1rem;
         display: inline-block;
@@ -60,7 +60,7 @@ $navigator-bar-height: 60px !default;
         }
     }
 
-    .gather-mobile-button {
+    .travel-mobile-button {
         display: none;
         @media #{$screen-small-and-down} {
             display: block;
@@ -77,7 +77,7 @@ $navigator-bar-height: 60px !default;
         }
     }
 
-    .gather-mobile {
+    .travel-mobile {
         display: none;
 
         text-align: center;

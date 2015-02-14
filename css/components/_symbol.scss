@@ -1,12 +1,11 @@
 @font-face {
     font-family: 'LigatureSymbols';
-    font-weight: normal;
-    font-style: normal;
     src: url('font/ligature-symbols/LigatureSymbols.woff') format('woff');
 }
 
-.lsf, .lsf-icon:before {
+.ligature-symbols, .ligature-symbols-icon:before {
     font-family: 'LigatureSymbols';
+    font-size: 125%;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
@@ -19,7 +18,7 @@
     font-feature-settings: "liga" 1, "dlig" 1;
 }
 
-.lsf-icon:before {
+.ligature-symbols-icon:before {
     content:attr(title);
     margin-right:0.3em;
     font-size:130%;

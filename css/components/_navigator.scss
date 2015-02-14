@@ -14,26 +14,30 @@ $navigator-bar-height: 60px !default;
         height: $navigator-bar-height;
         line-height: $navigator-bar-height;
 
-        a {
-            color: $text-color;
-            font-size: map_get($font_size, "huge");
-            font-weight: map_get($font_weight, "thin-extreme");
-        }
-
         @media #{$screen-small-and-down} {
             left: 0;
             width: 100%;
             text-align: center;
             padding: 0;
         }
+
+        a {
+            color: $text-color;
+            font-size: map_get($font_size, "huge");
+            font-weight: map_get($font_weight, "thin-extreme");
+        }
     }
 
-    .headquarter {
+    .gather {
         float: right;
         padding: 0 1rem;
         display: inline-block;
 
-        .department {
+        @media #{$screen-small-and-down} {
+            display: none;
+        }
+
+        .direction {
             float: left;
             padding: 0 0.5rem;
             margin: 0 0.5rem;
@@ -54,20 +58,33 @@ $navigator-bar-height: 60px !default;
                 }
             }
         }
+    }
 
+    .gather-mobile-button {
+        display: none;
         @media #{$screen-small-and-down} {
-            display: none;
+            display: block;
+
+            top: 0;
+            position: absolute;
+            padding: 0 1rem;
+            height: $navigator-bar-height;
+            line-height: $navigator-bar-height;
+
+            color: transparentize($text-color, 0.2);
+            font-size: map_get($font_size, "huge");
+            font-weight: map_get($font_weight, "thin-extreme");
         }
     }
 
-    .headquarter-mobile {
+    .gather-mobile {
         display: none;
 
         text-align: center;
         border-top: solid 0.1rem map_get($colors-spry-design, "white");
         background-color: $background-color;
 
-        .department {
+        .direction {
             float: left;
 
             height: $navigator-bar-height;
@@ -78,11 +95,11 @@ $navigator-bar-height: 60px !default;
                 font-size: map_get($font_size, "large");
                 font-weight: map_get($font_weight, "thin-extreme");
 
-                @include transition(color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s);
+                @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s);
 
                 &:hover {
                     color: map_get($colors-spry-design, "grey-iron");
-                    @include transition(color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s);
+                    @include transition(all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s);
                 }
             }
         }

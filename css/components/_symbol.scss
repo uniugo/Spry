@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'LigatureSymbols';
+    font-weight: normal;
+    font-style: normal;
+    src: url('font/ligature-symbols/LigatureSymbols.woff') format('woff');
+}
+
+.lsf, .lsf-icon:before {
+    font-family: 'LigatureSymbols';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -ms-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-font-feature-settings: "liga" 1, "dlig" 1;
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga" 1, "dlig" 1;
+    font-feature-settings: "liga" 1, "dlig" 1;
+}
+
+.lsf-icon:before {
+    content:attr(title);
+    margin-right:0.3em;
+    font-size:130%;
+}

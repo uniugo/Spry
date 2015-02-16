@@ -1,6 +1,6 @@
 $navigator-bar-height: 60px !default;
 
-@mixin navs($text-color, $background-color) {
+@mixin navbars($text-color, $background-color) {
 
     width: 100%;
     height: $navigator-bar-height;
@@ -106,13 +106,13 @@ $navigator-bar-height: 60px !default;
     }
 }
 
-.nav {
-    @include navs(
+.navbar {
+    @include navbars(
         map_get($colors-spry-design, "grey-mine"),
         transparentize(map_get($colors-spry-design, "grey-platinum"), 0.2)
     );
 }
 
-.nav-transparent {
-    @include navs(map_get($colors-spry-design, "white"), transparent);
+.navbar-transparent {
+    @include navbars(map_get($colors-spry-design, "white"), transparent);
 }

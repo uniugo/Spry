@@ -1,7 +1,13 @@
 ---
-title: Navigator
-description: Navigator Demo
+title: Nav Bar
+description: Nav Bar Demo
 ---
+
+<script>
+    $(document).ready(function () {
+        $(".navbar").navbar();
+    })
+</script>
 
 <div class="navbar">
     <div class="brand">
@@ -14,7 +20,7 @@ description: Navigator Demo
         <div class="direction"> <a href="#">Item 4</a> </div>
     </div>
 
-    <div class="travel-mobile-button ligature-symbols" onclick="toggle_travel_mobile()">code</div>
+    <div class="travel-mobile-button ligature-symbols">code</div>
     <div class="travel-mobile row">
         <div class="direction column s3"> <a href="#">Item 1</a> </div>
         <div class="direction column s3"> <a href="#">Item 2</a> </div>

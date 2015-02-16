@@ -1,12 +1,25 @@
+(function ($) {
 
-function toggle_travel_mobile() {
+    $.fn.navbar = function(options){
 
-    var travel_mobile_list = $(".travel-mobile");
+        var travel_mobile_button = $(".travel-mobile-button");
 
-    if (travel_mobile_list.style.display == "block") {
-        travel_mobile_list.style.display = "none"
-    } else {
-        travel_mobile_list.style.display = "black"
-    }
+        travel_mobile_button.on("click", function () {
 
-}
+            $(".travel-mobile").each(function () {
+                if (this.style.display == "block") {
+
+                    console.log(".travel-mobile: block->none");
+                    this.style.display = "none"
+                } else {
+
+                    console.log(".travel-mobile: none->block");
+                    this.style.display = "block"
+                }
+            })
+        });
+
+        return this
+    };
+
+}( jQuery ));

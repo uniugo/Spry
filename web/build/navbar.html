@@ -4,15 +4,22 @@
         <script type="text/javascript" src="http://10.0.0.10:35729/livereload.js?"></script>
 
         <meta charset="utf-8">
-        <title>Navigator</title>
-        <meta name="description" content="Navigator Demo" />
+        <title>Nav Bar</title>
+        <meta name="description" content="Nav Bar Demo" />
 
         <link href="../../build/spry.min.css" rel="stylesheet" />
-        <link href="../../build/jquery-2.1.3.min.js" rel="stylesheet" />
-        <link href="../../build/spry.min.js" rel="stylesheet" />
+        <script type="text/javascript" src="../../build/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="../../build/spry.js"></script>
+        <!--<script type="text/javascript" src="../../build/spry.min.js"></script>-->
     </head>
     <body>
         
+<script>
+    $(document).ready(function () {
+        $(".navbar").navbar();
+    })
+</script>
+
 <div class="navbar">
     <div class="brand">
         <a href="#">Spry</a>
@@ -24,7 +31,7 @@
         <div class="direction"> <a href="#">Item 4</a> </div>
     </div>
 
-    <div class="travel-mobile-button ligature-symbols" onclick="toggle_travel_mobile()">code</div>
+    <div class="travel-mobile-button ligature-symbols">code</div>
     <div class="travel-mobile row">
         <div class="direction column s3"> <a href="#">Item 1</a> </div>
         <div class="direction column s3"> <a href="#">Item 2</a> </div>
